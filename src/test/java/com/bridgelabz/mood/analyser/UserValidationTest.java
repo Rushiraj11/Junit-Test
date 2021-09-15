@@ -10,5 +10,13 @@ public class UserValidationTest {
         boolean actualResult = validation.firstName("Rushiraj");
         Assert.assertTrue(actualResult);
     }
+
+    @Test
+    public void givenlastName_When3Character_ShouldReturnTrue() {
+        UserValidation validation = new UserValidation();
+        boolean actualResult = validation.lastName("Rushiraj");
+        Assert.assertTrue(actualResult);
+
+    }
 }
 

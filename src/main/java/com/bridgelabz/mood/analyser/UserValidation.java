@@ -13,5 +13,11 @@ public class UserValidation {
         Matcher matcher = pattern.matcher(firstname);
         return matcher.matches();
     }
+    public static boolean lastName(String lastname) {
 
+        String regex = "^[A-Z]{1}[a-z]{2,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(lastname);
+        return matcher.matches();
+    }
 }
